@@ -7,7 +7,7 @@
     zsh = {
       enable = true;
       autosuggestions.enable = true;
-      syntaxHightlighting = {
+      syntaxHighlighting = {
         enable = true;
         patterns = {
           "rm -rf *" = "fg=black,bg=red";
@@ -15,7 +15,7 @@
         styles = {
           "alias" = "fg=magenta";
         };
-        highlighters = ["main" "brackets" "patterns"];
+        highlighters = ["main" "brackets" "pattern"];
       };
     };
   };

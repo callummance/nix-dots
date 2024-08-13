@@ -10,7 +10,7 @@
   };
 
   services.pipewire.lowLatency.enable = true;
-  import = [
+  imports = [
     inputs.nix-gaming.nixosModules.pipewireLowLatency
   ];
 }

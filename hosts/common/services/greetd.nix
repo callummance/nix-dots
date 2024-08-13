@@ -1,10 +1,10 @@
 {
   config,
+  pkgs,
   lib,
   ...
 }: {
   environment.systemPackages = [
-    pkgs.greetd
     pkgs.greetd.tuigreet
   ];
 

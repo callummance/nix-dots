@@ -19,7 +19,7 @@ let
     ./services/gnome-services.nix
     ./services/greetd.nix
     ./services/location.nix
-    ./services/opesnssh.nix
+    ./services/openssh.nix
     ./services/print.nix
   ];
 

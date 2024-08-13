@@ -39,8 +39,8 @@
         style = "full";
       };
       subpixel = {
-        lcfilter = "default";
-        rgba = "rgs";
+        lcdfilter = "default";
+        rgba = "rgb";
       };
       defaultFonts = {
         serif = ["Liberation Serif" "Noto Color Emoji"];
@@ -48,10 +48,11 @@
         monospace = ["JetBrains Mono" "Noto Color Emoji"];
         emoji = ["Noto Color Emoji"];
       };
-      fontDir = {
-        enable = true;
-        decompressFonts = true;
-      }
-    }
+    };
+
+    fontDir = {
+      enable = true;
+      decompressFonts = true;
+    };
   };
 }

@@ -1,11 +1,12 @@
 {
+  self,
   config,
   pkgs,
   ...
 }: let
   commonModules = "${self}/hosts/common";
 
-  inherit {import commonModules} laptop;
+  inherit (import commonModules) laptop;
 in {
   imports = 
     laptop ++ [
@@ -16,12 +17,12 @@ in {
 
   boot = {
     kernelModules = ["kvm-intel"];
-    kernelParams = {};
+    kernelParams = [];
   };
 
-  networking.hostname = "tailred";
+  networking.hostName = "tailred";
 
   services = {
-    fstrim = true;
+    fstrim.enable = true;
   };
 }

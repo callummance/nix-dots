@@ -1,13 +1,15 @@
 {
   self,
   inputs,
+  nixpkgs,
+  ...
 }: let
-  inherit (nixpkgs.lib) nixosSystem;
+  inherit (inputs.nixpkgs.lib) nixosSystem;
 in {
   flake.nixosConfigurations = {
     # Thinkpad T480 laptop
     tailred = nixosSystem {
-      specialArgs = {inherit self inputs;};
+      specialArgs = {inherit self nixpkgs inputs;};
       modules = [
         ./tailred
       ];

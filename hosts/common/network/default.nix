@@ -13,5 +13,7 @@
   };
 
   # Don't wait for network before starting nm
-  systemd.services.NetworkManager-wait-online = lib.mkForce false;
+  systemd.services.NetworkManager-wait-online = {
+    enable = lib.mkForce false;
+  };
 }

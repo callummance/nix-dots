@@ -16,5 +16,5 @@
     };
   };
 
-  console.keymap = "uk";
+  console.keyMap = "uk";
 }

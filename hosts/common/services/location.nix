@@ -2,7 +2,7 @@
   location = {
     provider = "geoclue2";
     latitude = 51.51;
-    longidtude = -0.12;
+    longitude = -0.12;
   };
 
   services.geoclue2.enable = true;
