@@ -10,6 +10,7 @@ let
     ./software/game-mode.nix
     ./software/home-manager.nix
     ./software/hyprland.nix
+    ./software/gnome.nix
     ./software/qt.nix
     ./software/xdg.nix
     ./software/misc.nix
